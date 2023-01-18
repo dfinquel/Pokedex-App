@@ -1,0 +1,22 @@
+/* Color Palette 
+
+Background Color (Black): #000000
+Text Color (Green): #009616
+*/
+
+:root{
+    --background-color:#000000;
+    --text-color:#00bc1c;
+    --font-weight: 400;
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
