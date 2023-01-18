@@ -152,7 +152,7 @@ let pokemonList = [
         { name: 'Mew', height: 30, types: ['Psychic']},
     ];
 
-// Note: Below, created a for loop that iterates over each item in pokemonList
+// Note: Below, created a for loop that iterates over each item in pokemonList, which includes a conditional
 
 for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height <=30){
