@@ -155,5 +155,13 @@ let pokemonList = [
 // Note: Below, created a for loop that iterates over each item in pokemonList
 
 for (let i = 0; i < pokemonList.length; i++) {
-    document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + "<br>");
+    if (pokemonList[i].height <=30){
+        document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + " - Pretty tiny!" + "<br>");
+    } else if (pokemonList[i].height >152 && pokemonList[i].height <853) {
+        document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + " - This is a big one" + "<br>");
+    } else if (pokemonList[i].height >=853) {
+        document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + " - Wow, that\’s big!" + "<br>");
+    } else {
+        document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + "<br>");
+    }
 }
