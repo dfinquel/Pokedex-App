@@ -151,3 +151,9 @@ let pokemonList = [
         { name: 'Mewtwo', height: 183, types: ['Psychic']},
         { name: 'Mew', height: 30, types: ['Psychic']},
     ];
+
+// Note: We didn’t capitalize the title as this fits our style better
+
+for (let i = 0; i < pokemonList.length; i++) {
+    document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + "<br>");
+}
