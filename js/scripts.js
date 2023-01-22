@@ -153,14 +153,18 @@ let pokemonRepository = (function () {
         { name: 'Mew', height: 30, types: ['Psychic']},
     ];
 
-    return {
-        getAll: function() {
-            return pokemonList;
-        },
-        add: function(addPokemon) {
-            pokemonList.push(addPokemon);
-        }
+    function add(addPokemon) {
+        pokemonList.push(addPokemon);
     }
+    
+    function getAll() {
+        return pokemonList;
+    }
+    
+    return {
+        add,
+        getAll
+    };
 })();
 
 // Note: Below, created a forEach loop that iterates over each item in pokemonList, which includes a conditional
