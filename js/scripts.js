@@ -153,6 +153,17 @@ let pokemonRepository = (function () {
         { name: 'Mew', height: 30, types: ['Psychic']},
     ];
 
+
+    /*
+        function add(addPokemon) {
+            if (typeof pokemon === 'object' && Object.keys() = ['name', 'height', 'types']) {
+                pokemonList.push(addPokemon);
+            } else {
+                console.log('Not valid. Please make sure that parameter is an object, and keys include name, height, and types.')
+            }
+        }
+    */
+    
     function add(addPokemon) {
         if (typeof pokemon === 'object') {
             pokemonList.push(addPokemon);
