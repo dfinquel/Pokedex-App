@@ -154,7 +154,11 @@ let pokemonRepository = (function () {
     ];
 
     function add(addPokemon) {
-        pokemonList.push(addPokemon);
+        if (typeof pokemon === 'object') {
+            pokemonList.push(addPokemon);
+        } else {
+            console.log('Not valid. Please add only an object parameter.')
+        }
     }
     
     function getAll() {
