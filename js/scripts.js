@@ -152,16 +152,16 @@ let pokemonList = [
         { name: 'Mew', height: 30, types: ['Psychic']},
     ];
 
-// Note: Below, created a for loop that iterates over each item in pokemonList, which includes a conditional
+// Note: Below, created a forEach loop that iterates over each item in pokemonList, which includes a conditional
 
-for (let i = 0; i < pokemonList.length; i++) {
-    if (pokemonList[i].height <=30){
-        document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + " - Pretty tiny!" + "<br>");
-    } else if (pokemonList[i].height >152 && pokemonList[i].height <853) {
-        document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + " - This is a big one" + "<br>");
-    } else if (pokemonList[i].height >=853) {
-        document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + " - Wow, that\’s big!" + "<br>");
+pokemonList.forEach(function(pokemon) {
+    if (pokemon.height <=30){
+        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Pretty tiny!" + "<br>");
+    } else if (pokemon.height >152 && pokemon.height <853) {
+        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - This is a big one" + "<br>");
+    } else if (pokemon.height >=853) {
+        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Wow, that\’s big!" + "<br>");
     } else {
-        document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "cm" + ")" + "<br>");
+        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");
     }
-}
+  });
