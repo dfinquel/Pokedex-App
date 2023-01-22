@@ -156,7 +156,7 @@ let pokemonRepository = (function () {
 
     /*
         function add(addPokemon) {
-            if (typeof pokemon === 'object' && Object.keys() = ['name', 'height', 'types']) {
+            if (typeof pokemon === 'object' && Object.keys(addPokemon).includes('name') && Object.keys(addPokemon).includes('height') && Object.keys(addPokemon).includes('types')) {
                 pokemonList.push(addPokemon);
             } else {
                 console.log('Not valid. Please make sure that parameter is an object, and keys include name, height, and types.')
