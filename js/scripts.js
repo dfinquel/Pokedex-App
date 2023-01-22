@@ -167,9 +167,10 @@ let pokemonRepository = (function () {
     };
 })();
 
+
 // Note: Below, created a forEach loop that iterates over each item in pokemonList, which includes a conditional
 
-pokemonList.forEach(function(pokemon) {
+pokemonRepository.getAll().forEach(function(pokemon) {
     if (pokemon.height <=30){
         document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Pretty tiny!" + "<br>");
     } else if (pokemon.height >152 && pokemon.height <853) {
