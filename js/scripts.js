@@ -168,7 +168,11 @@ let pokemonRepository = (function () {
 })();
 
 
-// Note: Below, created a forEach loop that iterates over each item in pokemonList, which includes a conditional
+/* 
+Note: 
+    Below, created a forEach loop that iterates over each item in pokemonList, which includes a conditional.
+    Updated code to call pokemonRepository.getAll(); and be able to access and display array contained by IIFE.
+*/
 
 pokemonRepository.getAll().forEach(function(pokemon) {
     if (pokemon.height <=30){
