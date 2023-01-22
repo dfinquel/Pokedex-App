@@ -1,4 +1,4 @@
-(function () {
+let pokemonRepository = (function () {
     let pokemonList = [
             { name: 'Bulbasaur', height: 60, types: ['Grass', 'Poison']},
             { name: 'Ivysaur', height: 91, types: ['Grass', 'Poison']},
