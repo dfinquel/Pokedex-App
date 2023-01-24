@@ -154,6 +154,12 @@ let pokemonRepository = (function () {
     ];
 
  
+/* 
+Note: 
+    Below, created an add function with a condition, that checks whether the input is an object, and if all of the object keys are correct. 
+    If so, object is pushed to the list. Otherwise, an error message triggers in the console.
+*/
+
     function add(addPokemon) {
         const keys = Object.keys(addPokemon);
         if (
