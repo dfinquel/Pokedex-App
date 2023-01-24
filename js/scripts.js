@@ -153,24 +153,18 @@ let pokemonRepository = (function () {
         { name: 'Mew', height: 30, types: ['Psychic']},
     ];
 
-
-    /*
-        function add(addPokemon) {
-            if (typeof pokemon === 'object' && Object.keys(addPokemon).includes('name') && Object.keys(addPokemon).includes('height') && Object.keys(addPokemon).includes('types')) {
-                pokemonList.push(addPokemon);
-            } else {
-                console.log('Not valid. Please make sure that parameter is an object, and keys include name, height, and types.')
-            }
-        }
-    */
-    
+ 
     function add(addPokemon) {
-        if (typeof pokemon === 'object') {
-            pokemonList.push(addPokemon);
+        const keys = Object.keys(addPokemon);
+        if (
+            typeof pokemon === 'object' && 
+            keys.includes('name') && 
+            keys.includes('height') && 
+            keys.includes('types'))
+        pokemonList.push(addPokemon);
         } else {
-            console.log('Not valid. Please add only an object parameter.')
+            console.log('Not valid. Please make sure that parameter is an object, and keys include name, height, and types.')
         }
-    }
     
     function getAll() {
         return pokemonList;
