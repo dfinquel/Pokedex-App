@@ -166,11 +166,12 @@ Note:
             typeof pokemon === 'object' && 
             keys.includes('name') && 
             keys.includes('height') && 
-            keys.includes('types'))
+            keys.includes('types')) {
         pokemonList.push(addPokemon);
         } else {
             console.log('Not valid. Please make sure that parameter is an object, and keys include name, height, and types.')
         }
+    }
     
     function getAll() {
         return pokemonList;
