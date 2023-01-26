@@ -191,6 +191,9 @@ let pokemonRepository = (function () {
 pokemonRepository.getAll().forEach(function(pokemon) {
 
     let list = document.querySelector('.pokemon-list');
+    
+
+    /*Old loop block with conditional. Commented out and replaced by code above.
 
     if (pokemon.height <=30){
         document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Pretty tiny!" + "<br>");
@@ -199,6 +202,6 @@ pokemonRepository.getAll().forEach(function(pokemon) {
     } else if (pokemon.height >=853) {
         document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Wow, that\’s big!" + "<br>");
     } else {
-        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");    
+        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");*/    
     }
 });
