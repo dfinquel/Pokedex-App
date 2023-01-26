@@ -176,12 +176,6 @@ let pokemonRepository = (function () {
         return pokemonList;
     }
     
-    return {
-        add,
-        getAll,
-        addListItem
-    };
-
     function addListItem(pokemon) {
 
         let list = document.querySelector('.pokemon-list');
@@ -196,6 +190,13 @@ let pokemonRepository = (function () {
 
         list.appendChild(listItem);
     }
+
+    return {
+        add,
+        getAll,
+        addListItem
+    }
+
 })();
 
 
