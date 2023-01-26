@@ -20,3 +20,16 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
 }
+
+.pokemon-item {
+    border: groove;
+    /*Takes the font from the outer container (in this case, the body).*/
+    font-family: inherit;
+    text-align: center;
+    background-color: #000000;
+    height: auto;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+}
