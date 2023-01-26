@@ -206,7 +206,8 @@ let pokemonRepository = (function () {
 */
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-    
+
+    pokemonRepository.addListItem(pokemon);
 
     /*Old loop block with conditional. Commented out and replaced by code above.
 
