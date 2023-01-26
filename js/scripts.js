@@ -189,6 +189,9 @@ let pokemonRepository = (function () {
 */
 
 pokemonRepository.getAll().forEach(function(pokemon) {
+
+    let list = document.querySelector('.pokemon-list');
+
     if (pokemon.height <=30){
         document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Pretty tiny!" + "<br>");
     } else if (pokemon.height >152 && pokemon.height <853) {
@@ -196,6 +199,6 @@ pokemonRepository.getAll().forEach(function(pokemon) {
     } else if (pokemon.height >=853) {
         document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Wow, that\’s big!" + "<br>");
     } else {
-        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");
+        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");    
     }
 });
