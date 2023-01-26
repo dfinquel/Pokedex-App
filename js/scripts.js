@@ -192,6 +192,7 @@ pokemonRepository.getAll().forEach(function(pokemon) {
 
     let list = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li')
+    let button = document.createElement('button')
     
 
     /*Old loop block with conditional. Commented out and replaced by code above.
