@@ -181,7 +181,8 @@ let pokemonRepository = (function () {
         getAll
     };
 
-    function addListItem()
+    function addListItem(pokemon) {
+    }
 
 })();
 
