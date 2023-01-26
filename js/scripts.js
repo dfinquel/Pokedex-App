@@ -155,7 +155,6 @@ let pokemonRepository = (function () {
 
  
 /* 
-Note: 
     Below, created an add function with a condition, that checks whether the input is an object, and if all of the object keys are correct. 
     If so, object is pushed to the list. Otherwise, an error message triggers in the console.
 */
@@ -185,7 +184,6 @@ Note:
 
 
 /* 
-Note: 
     Below, created a forEach loop that iterates over each item in pokemonList, which includes a conditional.
     Updated code to call pokemonRepository.getAll(); and be able to access and display array contained by IIFE.
 */
