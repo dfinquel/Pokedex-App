@@ -1,12 +1,14 @@
 /* Color Palette 
 
 Background Color (Black): #000000
-Text Color (Green): #009616
+Primary Color (Malachite): #0bda51
+Secondary Color (Tomato): #ff6347
+Tertiary Color (Sacramento State Green): #043927
 */
 
 :root{
     --background-color:#000000;
-    --text-color:#00bc1c;
+    --text-color:#0bda51;
     --font-weight: 400;
 }
   
@@ -21,15 +23,46 @@ body {
     font-weight: 400;
 }
 
+.main-heading {
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-text {
+    font-family: inherit;
+    font-weight: 400;
+    text-align: center;
+}
+
 .pokemon-item {
+    color: #0bda51;
+    background-color: #000000;
     border: groove;
-    /*Takes the font from the outer container (in this case, the body).*/
+    border-color: #0bda51;
     font-family: inherit;
     text-align: center;
-    background-color: #000000;
     height: auto;
-    width: 300px;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 3px;
+    width: 250px;
+    margin: 5px auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+button:hover { 
+    cursor: pointer;
+    color: #ff6347;
+    background-color: #000000;
+    border: groove;
+    border-color: #ff6347;
+    font-weight: bold;
+}
+
+button:focus {
+    cursor: pointer;
+    color: #ff6347;
+    background-color: #043927;
+    border: groove;
+    border-color: #ff6347;
+    font-weight: bold;
 }
