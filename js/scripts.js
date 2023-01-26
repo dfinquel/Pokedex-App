@@ -206,6 +206,6 @@ pokemonRepository.getAll().forEach(function(pokemon) {
     } else if (pokemon.height >=853) {
         document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Wow, that\’s big!" + "<br>");
     } else {
-        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");*/    
-    }
+        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");   
+    }*/
 });
