@@ -191,6 +191,10 @@ let pokemonRepository = (function () {
         list.appendChild(listItem);
     }
 
+    function showDetails(pokemon) {
+        console.log(pokemon);
+    }
+
     return {
         add,
         getAll,
