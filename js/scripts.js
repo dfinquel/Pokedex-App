@@ -198,6 +198,8 @@ pokemonRepository.getAll().forEach(function(pokemon) {
     button.innerText = pokemon.name;
     button.classList.add('pokemon-item');
     button.appendChild(listItem);
+
+    listItem.appendChild(list);
     
 
     /*Old loop block with conditional. Commented out and replaced by code above.
