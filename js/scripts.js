@@ -186,12 +186,15 @@ let pokemonRepository = (function () {
         button.innerText = pokemon.name;
         button.classList.add('pokemon-item');
 
+        /*Below, added event listener to button, that shows details when the button is clicked.*/
         button.addEventListener('click', function (event) {
             showDetails(pokemon);
         }
 
+        /*Below, button is appended to listItem(it becomes its child).*/
         listItem.appendChild(button);
 
+        /*Below, listItem is appended to list(it becomes its child).*/
         list.appendChild(listItem);
     }
 
@@ -204,7 +207,6 @@ let pokemonRepository = (function () {
         getAll,
         addListItem
     }
-
 })();
 
 
