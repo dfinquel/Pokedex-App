@@ -182,6 +182,17 @@ let pokemonRepository = (function () {
     };
 
     function addListItem(pokemon) {
+
+        let list = document.querySelector('.pokemon-list');
+
+        let listItem = document.createElement('li');
+
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('pokemon-item');
+        listItem.appendChild(button);
+
+        list.appendChild(listItem);
     }
 
 })();
@@ -193,17 +204,6 @@ let pokemonRepository = (function () {
 */
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-
-    let list = document.querySelector('.pokemon-list');
-
-    let listItem = document.createElement('li');
-
-    let button = document.createElement('button');
-    button.innerText = pokemon.name;
-    button.classList.add('pokemon-item');
-    listItem.appendChild(button);
-
-    list.appendChild(listItem);
     
 
     /*Old loop block with conditional. Commented out and replaced by code above.
