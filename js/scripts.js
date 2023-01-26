@@ -180,6 +180,9 @@ let pokemonRepository = (function () {
         add,
         getAll
     };
+
+    function addListItem()
+
 })();
 
 
