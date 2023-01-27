@@ -68,6 +68,10 @@ are set so the default width includes the padding and the border.
         transition-duration: 0.4s;
     }
 
+    ul {
+        list-style-type: none;
+    }
+
 /*
 4 - Below, rules applied to buttons.
 */
