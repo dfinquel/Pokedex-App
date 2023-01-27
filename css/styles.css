@@ -69,6 +69,7 @@ are set so the default width includes the padding and the border.
     }
 
     ul {
+        /*Remove list item dots next to each button in the ul.*/
         list-style-type: none;
     }
 
