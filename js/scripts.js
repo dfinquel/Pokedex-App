@@ -230,25 +230,27 @@ let pokemonRepository = (function () {
     }
 })();
 
+pokemonRepository.loadList().then(function() {
 
-/* 
-    Below, created a forEach loop that iterates over each item in pokemonList, which includes a conditional.
-    Updated code to call pokemonRepository.getAll(); and be able to access and display array contained by IIFE.
-*/
+    /* 
+        Below, created a forEach loop that iterates over each item in pokemonList, which includes a conditional.
+        Updated code to call pokemonRepository.getAll(); and be able to access and display array contained by IIFE.
+    */
 
-pokemonRepository.getAll().forEach(function(pokemon) {
+    pokemonRepository.getAll().forEach(function(pokemon) {
 
-    pokemonRepository.addListItem(pokemon);
+        pokemonRepository.addListItem(pokemon);
 
-    /*Old loop block with conditional. Commented out and replaced by code above.
+        /*Old loop block with conditional. Commented out and replaced by code above.
 
-    if (pokemon.height <=30){
-        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Pretty tiny!" + "<br>");
-    } else if (pokemon.height >152 && pokemon.height <853) {
-        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - This is a big one" + "<br>");
-    } else if (pokemon.height >=853) {
-        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Wow, that\’s big!" + "<br>");
-    } else {
-        document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");   
-    }*/
+        if (pokemon.height <=30){
+            document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Pretty tiny!" + "<br>");
+        } else if (pokemon.height >152 && pokemon.height <853) {
+            document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - This is a big one" + "<br>");
+        } else if (pokemon.height >=853) {
+            document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + " - Wow, that\’s big!" + "<br>");
+        } else {
+            document.write(pokemon.name + " " + "(height: " + pokemon.height + "cm" + ")" + "<br>");   
+        }*/
+    });
 });
