@@ -223,6 +223,8 @@ let pokemonRepository = (function () {
         })
     }
 
+    /*Below, added a loadDetails function to load the detailed data for a given pokemon.*/
+
     function loadDetails(item) {
         let url = item.detailsUrl;
         return fetch(url).then(function (response) {
