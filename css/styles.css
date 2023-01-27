@@ -21,7 +21,11 @@ are set so the default width includes the padding and the border.
 * {
     box-sizing: border-box;
 }
-  
+
+/*
+1 - Below, rules applied to the body.
+*/
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
