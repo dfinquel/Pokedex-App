@@ -49,6 +49,10 @@ body {
     text-align: center;
 }
 
+/*
+3 - Below, rules applied to list items.
+*/
+
 .pokemon-item {
     color: #0bda51;
     background-color: #000000;
