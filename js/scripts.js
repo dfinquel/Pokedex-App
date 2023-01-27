@@ -230,6 +230,9 @@ let pokemonRepository = (function () {
     }
 })();
 
+
+/*Below, call loadList function from inside the IIFE, in order to load the data.*/
+
 pokemonRepository.loadList().then(function() {
 
     /* 
