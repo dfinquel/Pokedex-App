@@ -242,7 +242,8 @@ let pokemonRepository = (function () {
     return {
         add,
         getAll,
-        loadList
+        loadList,
+        loadDetails
     }
 })();
 
