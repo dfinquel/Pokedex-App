@@ -152,7 +152,8 @@ let pokemonRepository = (function () {
         { name: 'Mewtwo', height: 183, types: ['Psychic']},
         { name: 'Mew', height: 30, types: ['Psychic']},
     ];
-
+    
+    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
  
 /* 
     Below, created an add function with a condition, that checks whether the input is an object, and if all of the object keys are correct. 
