@@ -153,6 +153,7 @@ let pokemonRepository = (function () {
         { name: 'Mew', height: 30, types: ['Psychic']},
     ];
     
+    /*Below, determined API url where data will be fetched from.*/
     let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
  
 /* 
