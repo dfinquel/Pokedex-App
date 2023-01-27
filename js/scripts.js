@@ -201,7 +201,9 @@ let pokemonRepository = (function () {
     }
 
     function showDetails(pokemon) {
-        console.log(pokemon);
+        loadDetails(pokemon).then(function () {
+            console.log(pokemon);
+        });
     }
 
     /*Below, added a loadList function to fetch data from the API.
