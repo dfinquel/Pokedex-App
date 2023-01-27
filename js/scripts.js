@@ -204,6 +204,9 @@ let pokemonRepository = (function () {
         console.log(pokemon);
     }
 
+    /*Below, added a loadList function to fetch data from the API.
+    It will then add each Pokémon in the fetched data to pokemonList with the add function above.*/
+
     function loadList() {
         return fetch(apiUrl).then(function (response) {
             return response.json();
