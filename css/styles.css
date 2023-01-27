@@ -26,66 +26,66 @@ are set so the default width includes the padding and the border.
 1 - Below, rules applied to the body.
 */
 
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-}
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+    }
 
 /*
 2 - Below, rules applied to headings and text.
 */
 
-.main-heading {
-    font-family: inherit;
-    font-weight: 700;
-    text-align: center;
-}
+    .main-heading {
+        font-family: inherit;
+        font-weight: 700;
+        text-align: center;
+    }
 
-.main-text {
-    font-family: inherit;
-    font-weight: 400;
-    text-align: center;
-}
+    .main-text {
+        font-family: inherit;
+        font-weight: 400;
+        text-align: center;
+    }
 
 /*
 3 - Below, rules applied to list items.
 */
 
-.pokemon-item {
-    color: #0bda51;
-    background-color: #000000;
-    border: groove;
-    border-color: #0bda51;
-    font-family: inherit;
-    text-align: center;
-    height: auto;
-    width: 250px;
-    margin: 5px auto;
-    padding: 15px;
-    border-radius: 5px;
-    transition-duration: 0.4s;
-}
+    .pokemon-item {
+        color: #0bda51;
+        background-color: #000000;
+        border: groove;
+        border-color: #0bda51;
+        font-family: inherit;
+        text-align: center;
+        height: auto;
+        width: 250px;
+        margin: 5px auto;
+        padding: 15px;
+        border-radius: 5px;
+        transition-duration: 0.4s;
+    }
 
 /*
 4 - Below, rules applied to buttons.
 */
 
-button:hover { 
-    cursor: pointer;
-    color: #ff6347;
-    background-color: #000000;
-    border: groove;
-    border-color: #ff6347;
-    font-weight: bold;
-}
+    button:hover { 
+        cursor: pointer;
+        color: #ff6347;
+        background-color: #000000;
+        border: groove;
+        border-color: #ff6347;
+        font-weight: bold;
+    }
 
-button:focus {
-    cursor: pointer;
-    color: #ff6347;
-    background-color: #043927;
-    border: groove;
-    border-color: #ff6347;
-    font-weight: bold;
-}
+    button:focus {
+        cursor: pointer;
+        color: #ff6347;
+        background-color: #043927;
+        border: groove;
+        border-color: #ff6347;
+        font-weight: bold;
+    }
