@@ -33,6 +33,10 @@ body {
     font-weight: 400;
 }
 
+/*
+2 - Below, rules applied to headings and text.
+*/
+
 .main-heading {
     font-family: inherit;
     font-weight: 700;
