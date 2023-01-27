@@ -68,6 +68,10 @@ body {
     transition-duration: 0.4s;
 }
 
+/*
+4 - Below, rules applied to buttons.
+*/
+
 button:hover { 
     cursor: pointer;
     color: #ff6347;
