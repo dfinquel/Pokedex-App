@@ -9,14 +9,14 @@ let pokemonRepository = (function () {
     If so, object is pushed to the list. Otherwise, an error message triggers in the console.
 */
 
-    function add(addPokemon) {
-        const keys = Object.keys(addPokemon);
+    function add(pokemon) {
+        const keys = Object.keys(pokemon);
         if (
             typeof pokemon === 'object' && 
             keys.includes('name') && 
             keys.includes('height') && 
             keys.includes('types')) {
-        pokemonList.push(addPokemon);
+        pokemonList.push(pokemon);
         } else {
             console.log('Not valid. Please make sure that parameter is an object, and keys include name, height, and types.')
         }
