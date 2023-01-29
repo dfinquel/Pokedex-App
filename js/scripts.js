@@ -50,9 +50,9 @@ let pokemonRepository = (function () {
         list.appendChild(listItem);
     }
 
-    function showDetails(pokemon) {
-        loadDetails(pokemon).then(function () {
-            console.log(pokemon);
+    function showDetails(item) {
+        loadDetails(item).then(function () {
+            console.log(item);
         });
     }
 
