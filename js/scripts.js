@@ -80,7 +80,7 @@ let pokemonRepository = (function () {
 
             /*Set DOM's contentElement to create a paragraph element with the pokemon's height and types data as its inner text.*/
             let contentElement = document.createElement ('p');
-            contentElement.innerText =('Height: ' + item.height + '\n' + '\n' + 'Types: ' + item.types);
+            contentElement.innerText =('Height: ' + (item.height * 10) + 'cm.' +'\n' + '\n' + 'Types: ' + item.types);
 
             /*Set closeButtonElement as a child of modal.*/
             modal.appendChild (closeButtonElement);
