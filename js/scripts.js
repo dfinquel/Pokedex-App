@@ -71,7 +71,7 @@ let pokemonRepository = (function () {
             and added event listener to hide modal when user clicks button.*/
             let closeButtonElement = document.createElement ('button');
             closeButtonElement.classList.add('modal-close');
-            closeButtonElement.innerText = 'X';
+            closeButtonElement.innerText = 'Close';
             closeButtonElement.addEventListener ('click', hideModal)
 
             /*Set DOM's titleElement to create a heading element with the pokemon's name as its inner text.*/
