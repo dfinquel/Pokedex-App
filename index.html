@@ -9,23 +9,26 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <img src="img\pokemon-logo.svg" class="main-logo" alt="Pokemon official logo">
-        
-        <h1 class="main-heading">The original Pokedex</h1>
-        <p class="main-text">
-            Please select your Pokemon
-        </p> <br>
-
-        <ul class="pokemon-list"></ul>
-        
-        <div id="modal-container">
-            <div class="modal">
-              <button class="modal-close">Close</button>
-              <h1>Modal title</h1>
-              <p>Modal text</p>       
+        <header class="header">
+            <img src="img\pokemon-logo.svg" class="main-logo" alt="Pokemon official logo">
+            <h1 class="main-heading">The original 151 Pokemons</h1>
+        </header>
+        <main class="main">
+            <p class="main-text">
+                Please select your Pokemon:
+            </p> <br>
+    
+            <ul class="pokemon-list"></ul>
+            
+            <div id="modal-container">
+                <div class="modal">
+                  <button class="modal-close">Close</button>
+                  <h1>Modal title</h1>
+                  <p>Modal text</p>       
+                </div>
             </div>
-        </div>
-
+        </main>
+        
         <!--Below, linked promise-polyfill script. As older browsers don't support JS promises, the promise-polyfill code 
         will manually add functions with the same name and implement them with available features.-->
         <script src="js/promise-polyfill.js"></script>
