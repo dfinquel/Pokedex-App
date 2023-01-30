@@ -117,6 +117,12 @@ let pokemonRepository = (function () {
                     hideModal();
                 }
             });
+
+            /*Below, added event listener to document, so when user clicks on button element, 
+            the showDetails function gets triggered to display the modal and its content.*/
+            document.querySelector ('button.button-class').addEventListener('click', () => {
+                showDetails ('Modal Title', 'Modal Content');
+            });
         });
     }
 
