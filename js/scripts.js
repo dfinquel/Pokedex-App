@@ -100,6 +100,14 @@ let pokemonRepository = (function () {
             function hideModal () {
                 modalContainer.classList.remove ('is-visible');
             }
+
+            /*Below, added event listener to window, so when user presses the ESC key
+            and the modalContainer's class is "is-visible", the modal gets hidden.*/
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')){
+                  hideModal();
+                }
+            });
         });
     }
 
