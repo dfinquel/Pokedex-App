@@ -108,6 +108,15 @@ let pokemonRepository = (function () {
                   hideModal();
                 }
             });
+
+            /*Below, added event listener to modalContainer, so when user clicks within 
+            the modalContainer but outside the modal itself, the modal gets hidden.*/
+            modalContainer.addEventListener('click', (e) => {
+                let target = e.target;
+                if (target === modalContainer) {
+                    hideModal();
+                }
+            });
         });
     }
 
