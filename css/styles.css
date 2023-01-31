@@ -55,7 +55,6 @@ are set so the default width includes the padding and the border.
     .main-heading {
         font-family: inherit;
         font-weight: 700;
-        text-align: center;
     }
 
     .main-text {
