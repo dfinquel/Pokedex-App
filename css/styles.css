@@ -49,6 +49,7 @@ are set so the default width includes the padding and the border.
     }
 
     .main-logo{
+        margin-top: 125px;
         max-width: 500px;
         width: 90%;
     }
