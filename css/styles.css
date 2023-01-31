@@ -44,6 +44,10 @@ are set so the default width includes the padding and the border.
         padding: 15px 0px;
     }
 
+    .navbar-solid {
+        background-color: #000000;
+    }
+
     .main {
         padding: 25px;
     }
