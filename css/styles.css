@@ -60,7 +60,6 @@ are set so the default width includes the padding and the border.
     .main-text {
         font-family: inherit;
         font-weight: 700;
-        text-align: center;
     }
 
 /*
