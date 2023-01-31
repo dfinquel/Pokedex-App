@@ -37,10 +37,6 @@ are set so the default width includes the padding and the border.
 2 - Below, rules applied to header and main body elements.
 */
     
-    .header {
-        padding: 25px;
-    }
-
     .main {
         padding: 25px;
     }
