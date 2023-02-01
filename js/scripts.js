@@ -53,64 +53,64 @@ let pokemonRepository = (function () {
     function showDetails(item) {
         loadDetails(item).then(function () {
             
-            /*Set DOM's modalContainer to be equal to first element in document with id "modal-container'.*/
+            /*Set DOM's modalContainer to be equal to first element in document with id "modal-container'.
             let modalContainer = document.querySelector ('#modal-container');
 
             modalContainer.innerHTML = '';
 
-            /*Set DOM's modal to create a div element with class "modal".*/
+            Set DOM's modal to create a div element with class "modal".
             let modal = document.createElement('div');
             modal.classList.add ('modal');
 
-            /*Set DOM's sprite to create an img element with class "sprite", and assigned img source to it.*/
+            Set DOM's sprite to create an img element with class "sprite", and assigned img source to it.
             let sprite = document.createElement('img');
             sprite.classList.add ('sprite');
             sprite.src = item.imageUrl;
 
-            /*Set DOM's closeButtonElement to create a button element with class "modal-close", 
-            and added event listener to hide modal when user clicks button.*/
+            Set DOM's closeButtonElement to create a button element with class "modal-close", 
+            and added event listener to hide modal when user clicks button.
             let closeButtonElement = document.createElement ('button');
             closeButtonElement.classList.add('modal-close');
             closeButtonElement.innerText = 'Close';
             closeButtonElement.addEventListener ('click', hideModal)
 
-            /*Set DOM's titleElement to create a heading element with the pokemon's name as its inner text.*/
+            Set DOM's titleElement to create a heading element with the pokemon's name as its inner text.
             let titleElement = document.createElement ('h1');
             titleElement.innerText =  (item.name);
 
-            /*Set DOM's contentElement to create a paragraph element with the pokemon's height and types data as its inner text.*/
+            Set DOM's contentElement to create a paragraph element with the pokemon's height and types data as its inner text.
             let contentElement = document.createElement ('p');
             contentElement.innerText =('Height: ' + (item.height * 10) + 'cm.' +'\n' + '\n' + 'Types: ' + item.types);
 
-            /*Set closeButtonElement as a child of modal.*/
+            Set closeButtonElement as a child of modal.
             modal.appendChild (closeButtonElement);
-            /*Set titleElement as a child of modal.*/
+            Set titleElement as a child of modal.
             modal.appendChild (titleElement);
-            /*Set contentElement as a child of modal.*/
+            Set contentElement as a child of modal.
             modal.appendChild (contentElement);
-            /*Set sprite as a child of modal.*/
+            Set sprite as a child of modal.
             modal.appendChild (sprite);
-            /*Set modal as a child of modalContainer.*/
+            Set modal as a child of modalContainer.
             modalContainer.appendChild (modal);
 
-            /*Add "is-visible" class to modalContainer.*/
+            Add "is-visible" class to modalContainer.
             modalContainer.classList.add('is-visible');
 
-            /*Below, added hideModal function, which removes the "is-visible" class from modalContainer.*/
+            Below, added hideModal function, which removes the "is-visible" class from modalContainer.
             function hideModal () {
                 modalContainer.classList.remove ('is-visible');
             }
 
-            /*Below, added event listener to window, so when user presses the ESC key
-            and the modalContainer's class is "is-visible", the modal gets hidden.*/
+            Below, added event listener to window, so when user presses the ESC key
+            and the modalContainer's class is "is-visible", the modal gets hidden.
             window.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')){
                   hideModal();
                 }
             });
 
-            /*Below, added event listener to modalContainer, so when user clicks within 
-            the modalContainer but outside the modal itself, the modal gets hidden.*/
+            Below, added event listener to modalContainer, so when user clicks within 
+            the modalContainer but outside the modal itself, the modal gets hidden.
             modalContainer.addEventListener('click', (e) => {
                 let target = e.target;
                 if (target === modalContainer) {
@@ -118,12 +118,12 @@ let pokemonRepository = (function () {
                 }
             });
 
-            /*Below, added event listener to document, so when user clicks on button element, 
-            the showDetails function gets triggered to display the modal and its content.*/
+            Below, added event listener to document, so when user clicks on button element, 
+            the showDetails function gets triggered to display the modal and its content.
             document.querySelector ('button.button-class').addEventListener('click', () => {
                 showDetails ('Modal Title', 'Modal Content');
             });
-        });
+        });*/
     }
 
     /*Below, added a loadList function to fetch data from the API.
