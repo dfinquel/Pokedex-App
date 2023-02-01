@@ -37,17 +37,17 @@ let pokemonRepository = (function () {
         button.classList.add('pokemon-item', 'btn-lg', 'btn-primary');
         button.setAttribute("data-toggle", "modal");
         button.setAttribute("data-target", "#modal-container");
-
-        /*Below, added event listener to button, that shows details when the button is clicked.*/
-        button.addEventListener('click', function(event) {
-            showDetails(pokemon);
-        });
-
+        
         /*Below, button is appended to listItem(it becomes its child).*/
         listItem.appendChild(button);
 
         /*Below, listItem is appended to list(it becomes its child).*/
         list.appendChild(listItem);
+
+        /*Below, added event listener to button, that shows details when the button is clicked.*/
+        button.addEventListener('click', function(event) {
+            showDetails(pokemon);
+        });
     }
 
     function showDetails(item) {
