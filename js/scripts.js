@@ -35,6 +35,8 @@ let pokemonRepository = (function () {
         let button = document.createElement('button');
         button.innerText = pokemon.name;
         button.classList.add('pokemon-item', 'btn-lg', 'btn-primary');
+        button.setAttribute("data-toggle", "modal");
+        button.setAttribute("data-target", "#pokemonModal");
 
         /*Below, added event listener to button, that shows details when the button is clicked.*/
         button.addEventListener('click', function(event) {
