@@ -163,6 +163,27 @@ let pokemonRepository = (function () {
         });
     }
 
+    function showModal(pokemon) {
+
+        let modalTitle = document.querySelector('.modal-title');
+        let modalBody = document.querySelector('.modal-body');
+
+        let pokemonSprite = document.createElement('img');
+            pokemonSprite.classList.add ('sprite');
+            pokemonSprite.src = pokemon.imageUrl;
+        
+        let pokemonHeight = document.createElement('p');
+            pokemonHeight.innerText =('Height: ' + (pokemon.height * 10) + 'cm.' +'\n');
+
+        let pokemonTypes = document.createElement('p');
+            pokemonTypes.innerText =('Types: ' + pokemon.types +'\n');
+
+        modalTitle.append(pokemon.name);
+        modalBody.append(pokemonSprite);
+        modalBody.append(pokemonHeight);
+        modalBody.append(pokemonTypes);
+    }
+
     return {
         add,
         getAll,
