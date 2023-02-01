@@ -44,13 +44,13 @@
 
         <main class="main text-center">
 
-            <img src="img\pokemon-logo.svg" class="main-logo" alt="Pokemon official logo">
+            <img src="img\pokemon-logo.svg" class="main-logo" alt="Pokemon official logo"> <br><br>
             <!--The display-5 class below is targeted by the bootstrap CSS to adjust the heading's size,
             while the text-center class centers the text on its envelope.-->
-            <h1 class="main-heading display-5 text-center">The original 151 Pokemons</h1>
+            <h3 class="main-heading display-6 text-center">The original 151 Pokemons</h3> <br><br>
 
             <p class="main-text text-center">
-                Please select your Pokemon:
+                Select your Pokemon below to display more info:
             </p> <br>
     
             <!--The list-unstyled class below removes bullets and spacing on the left of lists.-->
@@ -58,7 +58,7 @@
             
             <!--Below, added bootstrap modal.-->
             <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-pokemon" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="pokemonModalLabel"></h5>
@@ -71,8 +71,14 @@
                     </div>
                 </div>
             </div>
-                        
-        </main>
+        </main> <br><br>
+
+        <footer>
+            <p class="copyright">
+                © 2023 DAVID FINQUEL  
+            </p>
+        
+        </footer>
         
         <!--Below, added bootstrap scripts, before any other script, and in 
         the following order: jQuery, Popper.js, and js plugins.-->
