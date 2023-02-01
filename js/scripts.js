@@ -52,6 +52,9 @@ let pokemonRepository = (function () {
 
     function showDetails(item) {
         loadDetails(item).then(function () {
+            showModal(pokemon);
+        });
+    }
             
             /*Set DOM's modalContainer to be equal to first element in document with id "modal-container'.
             let modalContainer = document.querySelector ('#modal-container');
@@ -124,7 +127,6 @@ let pokemonRepository = (function () {
                 showDetails ('Modal Title', 'Modal Content');
             });
         });*/
-    }
 
     /*Below, added a loadList function to fetch data from the API.
     It will then add each Pokémon in the fetched data to pokemonList with the add function above.*/
