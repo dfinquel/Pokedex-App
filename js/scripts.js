@@ -49,12 +49,6 @@ let pokemonRepository = (function () {
             showDetails(pokemon);
         });
     }
-
-    function showDetails(item) {
-        loadDetails(item).then(function () {
-            showModal(pokemon);
-        });
-    }
             
             /*Set DOM's modalContainer to be equal to first element in document with id "modal-container'.
             let modalContainer = document.querySelector ('#modal-container');
@@ -163,7 +157,10 @@ let pokemonRepository = (function () {
         });
       }
 
-    function showModal(pokemon) {
+    function showDetails(pokemon) {
+        loadDetails(pokemon).then(function () {
+            showModal(pokemon);
+        });
     }
 
     return {
