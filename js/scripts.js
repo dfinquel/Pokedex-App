@@ -163,6 +163,9 @@ let pokemonRepository = (function () {
         });
       }
 
+    function showModal(pokemon) {
+    }
+
     return {
         add,
         getAll,
