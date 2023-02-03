@@ -2,6 +2,8 @@
 
 ## Simple Pokedex App built with HTML, CSS and JavaScript
 
+![Project Image](img\app-screenshot-1920-1080-main.jpg)
+
 Small Pokedex application built with HTML, CSS, and JavaScript that loads
 data from an external API and enables the viewing of data points in detail.
 
