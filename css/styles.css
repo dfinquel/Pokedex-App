@@ -146,6 +146,18 @@ are set so the default width includes the padding and the border.
         list-style-type: none;
     }
 
+    .pokemon-list {
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px 15px;
+        align-items: center;
+        justify-content: center;
+        max-width: 1600px;
+    }
+
 /*
 7 - Below, rules applied to buttons.
 */
