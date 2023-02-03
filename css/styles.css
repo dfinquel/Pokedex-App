@@ -167,3 +167,8 @@ are set so the default width includes the padding and the border.
         border-color: #ffb700;
         font-weight: bold;
     }
+
+    /*Below, removed default box-shadow from pokemon button.*/
+    .pokemon-item, .pokemon-item:hover, .pokemon-item:focus, .pokemon-item:active {
+        box-shadow: none;
+    }
