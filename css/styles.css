@@ -172,3 +172,8 @@ are set so the default width includes the padding and the border.
     .pokemon-item, .pokemon-item:hover, .pokemon-item:focus, .pokemon-item:active {
         box-shadow: none;
     }
+
+    /*Below, removed default outline from modal's close button.*/
+    .close:hover {
+        outline: none;  
+    }
