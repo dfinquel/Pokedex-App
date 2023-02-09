@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="utf-8">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pokedex-App</title>
 
@@ -107,10 +108,11 @@
 
         <!--Below, linked promise-polyfill script. As older browsers don't support JS promises, the promise-polyfill code 
         will manually add functions with the same name and implement them with available features.-->
-        <script src="js/promise-polyfill.js"></script>
+        <script src="js/vendors/promise-polyfill.js"></script>
         <!--Below, linked fetch-polyfill script. As older browsers don't support JS fetch, the fetch-polyfill code 
         will manually add functions with the same name and implement them with available features.-->
-        <script src="js/fetch-polyfill.js"></script>
-        <script src="dist\scripts-minified.js"></script>
+        <script src="js/vendors/fetch-polyfill.js"></script>
+        <script src="js/ui.js"></script>
+        <script src="dist/scripts-minified.js"></script>
     </body>
 </html>
