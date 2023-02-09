@@ -20,6 +20,10 @@ function showModal(pokemon) {
     const types = pokemon.types.map((item) => item.type.name).join(", ");
     pokemonTypes.innerText = 'Types: ' + types;
 
+    let pokemonAbilities = document.createElement('p');
+    const abilities = pokemon.abilities.map((item) => item.ability.name).join(", ");
+    pokemonAbilities.innerText = 'Abilities: ' + abilities;
+
     /*Below, set innerHTML of Title and Body to be strings.*/
     modalTitle.innerHTML = "";
     modalBody.innerHTML = "";
@@ -29,4 +33,5 @@ function showModal(pokemon) {
     modalBody.append(pokemonHeight);
     modalBody.append(pokemonWeight);
     modalBody.append(pokemonTypes);
+    modalBody.append(pokemonAbilities);
 }
