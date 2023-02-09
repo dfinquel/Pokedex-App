@@ -3,11 +3,21 @@ let pokemonRepository = (function () {
     
     /*Below, determined API url where data will be fetched from.*/
     let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=1008';
+
+    let searchButton = $(".btn-warning");
+        searchButton.on("click", function() {
+            let uPokemonList = $(".pokemon-list");
+            uPokemonList.empty();
+            getByName($(".form-control").val()).forEach(function(pokemon) {
+                addListItem(pokemon);
+        });
+    })
  
 /* 
     Below, created an add function with a condition, that checks whether the input is an object, and if all of the object keys are correct. 
     If so, object is pushed to the list. Otherwise, an error message triggers in the console.
 */
+
 
     function add(pokemon) {
         const keys = Object.keys(pokemon);
@@ -23,6 +33,12 @@ let pokemonRepository = (function () {
     
     function getAll() {
         return pokemonList;
+    }
+
+    function getByName(search) {
+        return pokemonList.filter(function(pokemon) {
+            return pokemon.name.toLowerCase().includes(search.toLowerCase());
+        });
     }
     
     function addListItem(pokemon) {
