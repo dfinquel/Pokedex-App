@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pokedex-App</title>
 
-        <link rel="shortcut icon" href="img\pikachu-favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="img/pikachu-favicon.ico" type="image/x-icon">
 
         <!--Below, added CDN link for bootstrap CSS styling.
         This must be added before any other stylesheets, in order to load and be available first.-->
@@ -17,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
 
-    <body background="img\grass-background.jpg">
+    <body background="img/grass-background.jpg">
 
         <nav class="sidenav">
 
@@ -28,13 +28,14 @@
                     </li>
                 </ul>
             </div>
+            
         </nav>
 
         <header class="text-center">
 
             <nav class="navbar navbar-expand-sm fixed-top navbar-dark border-bottom navbar-solid">
                 <a class="navbar-brand" href="#">
-                    <img src="img\pokeball-icon.svg" width="75" height="75" class="d-inline-block" alt="Main logo showing a pokeball and the Pokedex App text">
+                    <img src="img/pokeball-icon.svg" width="75" height="75" class="d-inline-block" alt="Main logo showing a pokeball and the Pokedex App text">
                     Pokedex-App
                 </a>
 
@@ -45,13 +46,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"><img src="img\united-states-flag-icon.svg" alt="USA Flag Icon" width="25" height="25"> ENG <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"><img src="img/united-states-flag-icon.svg" alt="USA Flag Icon" width="25" height="25"> ENG <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="img\germany-flag-icon.svg" alt="USA Flag Icon" width="25" height="25"> DEU <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"><img src="img/germany-flag-icon.svg" alt="USA Flag Icon" width="25" height="25"> DEU <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="img\spain-flag-icon.svg" alt="USA Flag Icon" width="25" height="25"> SPA <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"><img src="img/spain-flag-icon.svg" alt="USA Flag Icon" width="25" height="25"> SPA <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +62,7 @@
 
         <main class="main text-center">
 
-            <img src="img\pokemon-logo.svg" class="main-logo" alt="Pokemon official logo"> <br><br>
+            <img src="img/pokemon-logo.svg" class="main-logo" alt="Pokemon official logo"> <br><br>
             <!--The display-5 class below is targeted by the bootstrap CSS to adjust the heading's size,
             while the text-center class centers the text on its envelope.-->
             <h3 class="main-heading display-6 text-center">All of the 1008 Pokemon species</h3> <br><br>
@@ -119,10 +120,10 @@
 
         <!--Below, linked promise-polyfill script. As older browsers don't support JS promises, the promise-polyfill code 
         will manually add functions with the same name and implement them with available features.-->
-        <script src="js\vendors\promise-polyfill.js"></script>
+        <script src="js/vendors/promise-polyfill.js"></script>
         <!--Below, linked fetch-polyfill script. As older browsers don't support JS fetch, the fetch-polyfill code 
         will manually add functions with the same name and implement them with available features.-->
-        <script src="js\vendors\fetch-polyfill.js"></script>
+        <script src="js/vendors/fetch-polyfill.js"></script>
         <script src="js/ui.js"></script>
         <script src="js/scripts.js"></script>
     </body>
