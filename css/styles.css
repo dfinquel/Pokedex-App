@@ -87,6 +87,11 @@ are set so the default width includes the padding and the border.
         padding: 0px;
       }
 
+      .nav-link--unavailable {
+        filter: grayscale();
+        cursor: default;
+      }
+
 /*
 4 - Below, rules applied to footer.
 */
