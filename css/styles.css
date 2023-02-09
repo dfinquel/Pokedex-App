@@ -159,25 +159,28 @@ are set so the default width includes the padding and the border.
     }
 
 /*
-7 - Below, rules applied to buttons.
+7 - Below, rules applied to buttons("!important" forces rule to override default bootstrap button styling).
 */
 
     .btn-primary:hover, .btn-primary:focus {
         cursor: pointer;
         color: #ff6347;
-        background-color: #000000;
+        background-color: #000000 !important;
         border: groove;
         border-color: #ff6347;
         font-weight: bold;
+        outline: none;
+        box-shadow: none !important;
     }
 
     .btn-primary:active {
         cursor: pointer;
-        color: #ffb700;
-        background-color: #043927;
+        color: #ffb700 !important;
+        background-color: #043927 !important;
         border: groove;
-        border-color: #ffb700;
+        border-color: #ffb700 !important;
         font-weight: bold;
+        outline: none;
     }
 
     /*Below, removed default box-shadow from pokemon button.*/
