@@ -2,7 +2,7 @@ let pokemonRepository = (function () {
     let pokemonList = [];
     
     /*Below, determined API url where data will be fetched from.*/
-    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
+    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=1271';
  
 /* 
     Below, created an add function with a condition, that checks whether the input is an object, and if all of the object keys are correct. 
