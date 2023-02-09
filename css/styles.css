@@ -6,12 +6,6 @@ Secondary Color (Tomato): #ff6347
 Tertiary Color (Sacramento State Green): #043927
 */
 
-:root{
-    --background-color:#000000;
-    --text-color:#0bda51;
-    --font-weight: 400;
-}
-
 
 /*
 Firsly, using the property box-sizing with the value border-box, all elements of the document (targeted with *), 
@@ -27,8 +21,8 @@ are set so the default width includes the padding and the border.
 */
 
     body {
-        background-color: var(--background-color);
-        color: var(--text-color);
+        background-color: #000000;
+        color: #0bda51;
         font-family: 'Roboto Mono', monospace;
         font-weight: 400;
     }
