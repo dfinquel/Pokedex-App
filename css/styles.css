@@ -68,6 +68,31 @@ are set so the default width includes the padding and the border.
         font-weight: 700;
     }
 
+    .sidenav {
+        height: auto;
+        /* Position:fixed fixes navigation items so they stay in place on scroll. */
+        position: fixed;
+        overflow: hidden;
+        /* Bottom:0px places navbar at the bottom of the screen. */
+        bottom: 0px;
+        /* The z-index allows the image to be displayed in front of the other elements. */
+        z-index: 1;
+        margin: 20px;
+        line-height: 1;
+      }
+    
+      .navigation-list {
+        /* List-style-type: none erases the dots next to the navigation list items. */
+        list-style-type: none;
+        /* Reduces default left padding to 0px. */
+        padding-left: 0px;
+      }
+    
+      .side-navbar__item {
+        font-size: 40px;
+        padding: 0px;
+      }
+
 /*
 4 - Below, rules applied to footer.
 */
@@ -159,7 +184,7 @@ are set so the default width includes the padding and the border.
     }
 
 /*
-7 - Below, rules applied to buttons("!important" forces rule to override default bootstrap button styling).
+7 - Below, rules applied to buttons and anchors("!important" forces rule to override default bootstrap button styling).
 */
 
     .btn-primary:hover, .btn-primary:focus {
@@ -191,4 +216,9 @@ are set so the default width includes the padding and the border.
     /*Below, removed default outline from modal's close button.*/
     .close:hover {
         outline: none;  
+    }
+
+    a, a:hover {
+        text-decoration: none;
+        color: #ff6347;
     }
