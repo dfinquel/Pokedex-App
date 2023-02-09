@@ -92,6 +92,28 @@ are set so the default width includes the padding and the border.
         cursor: default;
       }
 
+    .form-inline {
+        flex-flow: row;
+    }
+
+    .form-control {
+        margin: 5px;
+    }
+
+    .btn-warning {
+        color: #ffffff;
+        background-color: #043927;
+        border-color: #0bda51;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .btn-warning:active, .btn-warning:hover {
+        color: #ffffff !important;
+        background-color: #ff6347 !important;
+        border-color: #ffffff !important;
+    }
+
 /*
 4 - Below, rules applied to footer.
 */
