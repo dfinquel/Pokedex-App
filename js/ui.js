@@ -8,7 +8,10 @@ function showModal(pokemon) {
         pokemonSprite.src = pokemon.imageUrl;
     
     let pokemonHeight = document.createElement('p');
-        pokemonHeight.innerText =('Height: ' + (pokemon.height * 10) + 'cm.' +'\n');
+        pokemonHeight.innerText =('Height: ' + (pokemon.height * 10) + 'cm' +'\n');
+
+    let pokemonWeight = document.createElement('p');
+    pokemonWeight.innerText =('Weight: ' + (pokemon.weight / 10) + 'kg' +'\n');
 
     /*Below, added a pokemonTypes variable, which creates a <p> element. 
     Then, the constant "types" is set to retrieve the type names from the types object, and join them with ", ". 
@@ -24,5 +27,6 @@ function showModal(pokemon) {
     modalTitle.append(pokemon.name);
     modalBody.append(pokemonSprite);
     modalBody.append(pokemonHeight);
+    modalBody.append(pokemonWeight);
     modalBody.append(pokemonTypes);
 }
